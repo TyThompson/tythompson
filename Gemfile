@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
-
+gem 'devise'
+gem 'pundit'
+gem 'twitter-bootstrap-rails'
+gem 'bootstrap_form'
+gem 'quiet_assets'
+gem 'pg'
+gem 'httparty'
+gem 'omniauth'
+gem 'omniauth-github'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -45,14 +53,6 @@ group :development do
   gem 'spring'
 end
 
-
-gem 'devise'
-gem 'pundit'
-gem 'twitter-bootstrap-rails'
-gem 'bootstrap_form'
-gem 'quiet_assets'
-gem 'pg'
-gem 'httparty'
 group :development, :test do
   gem 'pry-rails'
   gem 'better_errors'
