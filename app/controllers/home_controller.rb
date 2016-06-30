@@ -6,6 +6,7 @@ class HomeController < ApplicationController
   def index
     @url = "https://github.com/TyThompson.atom"
     @feed = Feedjira::Feed.fetch_and_parse @url
+    @email = "tythompson@gmail.com"
   end
 
 end

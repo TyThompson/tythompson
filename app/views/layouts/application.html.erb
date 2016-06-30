@@ -46,6 +46,7 @@
           <span class="icon-bar"></span>
         </button>
         <h2>Ty Thompson's portfolio</h2>
+
         <!-- <a class="navbar-brand" href="#">Ty Thompson's portfolio</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
@@ -65,14 +66,13 @@
         </div>
         <div class="col-lg-3">
           <div class="well sidebar-nav">
-            <h3>Ty's activity</h3>
+            <h3><%= link_to image_tag("/assets/GitHub-Mark-32px.png"), 'http://www.github.com/tythompson' %> Github activity</h3>
             <ul class="nav nav-list">
-              <li class="nav-header">Github</li>
-              <li> <%= link_to rss_title(0), rss_url(0) %> at <%= rss_updated(0) %></li>
-              <li> <%= link_to rss_title(1), rss_url(1) %> at <%= rss_updated(1) %></li>
-              <li> <%= link_to rss_title(2), rss_url(2) %> at <%= rss_updated(2) %></li>
-              <li> <%= link_to rss_title(3), rss_url(3) %> at <%= rss_updated(3) %></li>
-              <li> <%= link_to rss_title(4), rss_url(4) %> at <%= rss_updated(4) %></li>
+              <li> <%= link_to rss_title(0), rss_url(0) %> on <%= rss_updated(0) %></li>
+              <li> <%= link_to rss_title(1), rss_url(1) %> on <%= rss_updated(1) %></li>
+              <li> <%= link_to rss_title(2), rss_url(2) %> on <%= rss_updated(2) %></li>
+              <li> <%= link_to rss_title(3), rss_url(3) %> on <%= rss_updated(3) %></li>
+              <li> <%= link_to rss_title(4), rss_url(4) %> on <%= rss_updated(4) %></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
