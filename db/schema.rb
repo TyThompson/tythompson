@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20160629172204) do
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
+    t.string   "github_id"
+    t.text     "github_data"
     t.datetime "remember_created_at"
     t.integer  "sign_in_count",          default: 0,  null: false
     t.datetime "current_sign_in_at"
