@@ -9,6 +9,8 @@ gem 'httparty'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'figaro'
+gem 'feedjira'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'

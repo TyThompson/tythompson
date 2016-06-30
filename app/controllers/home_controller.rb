@@ -4,5 +4,8 @@ class HomeController < ApplicationController
   protect_from_forgery with: :exception
 
   def index
+    @url = "https://github.com/TyThompson.atom"
+    @feed = Feedjira::Feed.fetch_and_parse @url
   end
+
 end
