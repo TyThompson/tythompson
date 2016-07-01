@@ -9,4 +9,11 @@ class HomeController < ApplicationController
     @email = "tythompson@gmail.com"
   end
 
+  def resume
+    @url = "https://github.com/TyThompson.atom"
+    @feed = Feedjira::Feed.fetch_and_parse @url
+    @email = "tythompson@gmail.com"
+    @phone = "919-275-5880"
+  end
+
 end
